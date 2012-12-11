@@ -38,3 +38,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc README LICENSE
 %{python_sitelib}/*
+
+
+%changelog
+* Mon Oct 24 2011 Alexander Barakin <abarakin@mandriva.org> 1.0.0-1a1mdv2012.0
++ Revision: 705876
+- imported package pyusb
+
+
