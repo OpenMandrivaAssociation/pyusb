@@ -8,6 +8,7 @@ URL:		https://pypi.org/project/pyusb
 Source0:	https://files.pythonhosted.org/packages/source/p/pyusb/pyusb-%{version}.tar.gz
 BuildRequires:	python-devel
 BuildRequires:	pkgconfig(libusb)
+BuildRequires:	python%{pyver}dist(pip)
 BuildArch:	noarch
 
 %description
