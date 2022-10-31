@@ -1,6 +1,6 @@
 Name:		pyusb
 Version:	1.2.1
-Release:	1
+Release:	2
 Summary:	Python bindings for libusb
 Group:		Development/Python 
 License:	BSD	
@@ -17,6 +17,8 @@ methods to support most USB operations.
 
 %prep
 %autosetup -p1 -n pyusb-%{version}
+# Fix python*dist(pyusb) dependency versioning
+sed -i "/use_scm_version/i    version='%{version}',\n" setup.py
 
 %build
 %py_build
