@@ -1,6 +1,6 @@
 Name:		pyusb
 Version:	1.2.1
-Release:	2
+Release:	3
 Summary:	Python bindings for libusb
 Group:		Development/Python 
 License:	BSD	
