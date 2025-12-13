@@ -10,6 +10,10 @@ BuildRequires:	pkgconfig
 BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(libusb)
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(wheel)
+
 BuildArch:	noarch
 
 %description
