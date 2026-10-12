@@ -1,6 +1,6 @@
 Name:		pyusb
 Version:	1.3.1
-Release:	2
+Release:	3
 Summary:	Python bindings for libusb
 Group:		Development/Python 
 License:	BSD	
@@ -28,6 +28,9 @@ rm -rf %{name}.egg-info
 sed -i "/use_scm_version/i    version='%{version}',\n" setup.py
 
 %build
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
+
 %py_build
 
 %install
